@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "404feed3-fd9d-4e49-a53c-69d98807d10b",
+		"name": "authenticaion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "46201770"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/user/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"username\":\"frank\",\r\n    \"email\":\"gghghf@gmail.com\",\r\n    \"password\":\"ccff\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/user/register"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/user/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"email\":\"jerom6677123@gmail.com\",\r\n    \"password\":\"dfdfd8uu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/user/login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/user/allUsers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODc3ZDMyZjIwNjc2NWRkNmYxNmYyODAiLCJyb2xlIjoidXNlciIsImlhdCI6MTc1MjY4MzM0OCwiZXhwIjoxNzUyNjg2OTQ4fQ.Od73ItMEIFXoPfFShsXBs_u_K4Tw-MUVZz-ZThw_3qE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n    \"email\":\"jerom6677123@gmail.com\",\r\n    \"password\":\"dfdfd8uu\",\r\n    \"name\":\"jeromsdvsddsf\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/user/allUsers"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/user/data",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODc2OGZlZTBjNTY4ZTI2MDllYmU5ZDAiLCJyb2xlIjoidXNlciIsImlhdCI6MTc1MjYwNDczMSwiZXhwIjoxNzUyNjA4MzMxfQ.SgDDKtyulCvIWAjHyoIOAt6T-6Ktb9YeQVxpEWxYbYQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"email\":\"dfdfsf@gmsdvddssdcsdcail.com\",\r\n    \"password\":\"gsdcsdcsdcsdcsdcsdcdscsdcdsfg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/user/data"
+			},
+			"response": []
+		}
+	]
+}
